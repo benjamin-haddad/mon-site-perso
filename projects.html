@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Mon Site Informatique</title>
+    <link rel="stylesheet" href="/css/projet.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div id="logo">
+            <img src="images/1-28.jpeg" alt="Logo Informatique">
+        </div>
+        <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/about.html">À propos</a></li>
+            <li><a href="/projects.html">Projets</a></li>
+            <li><a href="/blog.html ">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projets -->
+    <section id="projects">
+        <h2>Nos Projets</h2>
+
+        <div class="project-card" onclick="openModal('projet1')">
+            <h3>Application Web de Gestion</h3>
+            <p>Une application d'inventaire moderne.</p>
+        </div>
+        <div class="project-card" onclick="openModal('projet2')">
+            <h3>Chatbot IA</h3>
+            <p>Un chatbot intelligent pour le service client.</p>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal-projet1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('projet1')">&times;</span>
+                <h2>Application Web de Gestion</h2>
+                <p>Une description détaillée du projet ici.</p>
+            </div>
+        </div>
+
+        <div id="modal-projet2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('projet2')">&times;</span>
+                <h2>Chatbot IA</h2>
+                <p>Une description détaillée du projet ici.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mon Site Informatique | Tous droits réservés.</p>
+    </footer>
+
+    <script src="/javascript/projet.js"></script>
+</body>
+</html>

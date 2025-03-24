@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Site Informatique</title>
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo Informatique">
+        </div>
+        <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/about.html">À propos</a></li>
+            <li><a href="/projects.html">Projets</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mon Site Informatique | Tous droits réservés.</p>
+    </footer>
+
+    <script src="/javascript/scriptcontact.js"></script>
+</body>/
+</html>
+
+ 

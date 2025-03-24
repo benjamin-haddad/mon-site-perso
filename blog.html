@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Mon Site Informatique</title>
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo Informatique">
+        </div>
+        <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/about.html">À propos</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog Filter -->
+    <section id="blog-filter">
+        <h2>Explorez nos articles</h2>
+        <label for="category-filter">Filtrer par catégorie :</label>
+        <select id="category-filter" onchange="filterPosts()">
+            <option value="all">Tous</option>
+            <option value="technologie">Technologie</option>
+            <option value="webdev">Développement Web</option>
+            <option value="ai">Intelligence Artificielle</option>
+        </select>
+    </section>
+
+    <!-- Blog Articles -->
+    <section id="blog-articles">
+        <div class="article" data-category="technologie">
+            <h3>Les dernières tendances en IA</h3>
+            <p class="date">Publié le 15 Janvier 2025</p>
+            <p>Explorez les innovations récentes dans le domaine de l'intelligence artificielle...</p>
+            <a href="#">Lire plus...</a>
+        </div>
+        <div class="article" data-category="webdev">
+            <h3>Les bases du développement web moderne</h3>
+            <p class="date">Publié le 12 Janvier 2025</p>
+            <p>Apprenez les technologies essentielles pour débuter dans le développement web...</p>
+            <a href="#">Lire plus...</a>
+        </div>
+        <div class="article" data-category="technologie">
+            <h3>Les dernières innovations en cybersécurité</h3>
+            <p class="date">Publié le 10 Janvier 2025</p>
+            <p>Un regard sur les technologies de cybersécurité qui transforment notre monde...</p>
+            <a href="#">Lire plus...</a>
+        </div>
+        <div class="article" data-category="ai">
+            <h3>Les défis de l'IA dans le monde du travail</h3>
+            <p class="date">Publié le 8 Janvier 2025</p>
+            <p>Quels sont les impacts de l'intelligence artificielle sur les emplois ?...</p>
+            <a href="#">Lire plus...</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mon Site Informatique | Tous droits réservés.</p>
+    </footer>
+
+    <script src="javascript/blog.js"></script>
+</body>
+</html>
