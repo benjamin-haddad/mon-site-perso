@@ -3,7 +3,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: #443f3f; /* Fond sombre pour l'effet cybersécurité */
+    background-color: #565151; /* Fond sombre pour l'effet cybersécurité */
     color: #00FF00; /* Couleur typique pour les textes de hacker */
 }
 
@@ -13,16 +13,20 @@ nav {
     color: #00FF00;
     padding: 1em;
     display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     justify-content: space-between;
     align-items: center;
     font-size: 10px;
     position: fixed;
-    width: 90%;
+    width: 99%;
     z-index: 10;
 }
 
 nav #logo img {
-    height: 40px;
+    height: 50px;
 }
 
 nav ul {

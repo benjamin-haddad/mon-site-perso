@@ -50,7 +50,7 @@
         </div>
         <div class="article" data-category="technologie">
             <h3>Les dernières innovations en cybersécurité</h3>
-            <p class="date">Publié le 10 Janvier 2025</p>
+            <p type="date"> class="date">Publié le 10 Janvier 2025 </p>
             <p>Un regard sur les technologies de cybersécurité qui transforment notre monde...</p>
             <a href="#">Lire plus...</a>
         </div>
@@ -69,3 +69,18 @@
     <script src="javascript/blog.js"></script>
 </body>
 </html>
+
+
+ <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
